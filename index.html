@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App de Clima</title>
+    <style>
+        body {
+            width: 100vw;
+            height: 100vh;
+            display: grid;
+            place-items: center;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: black;
+        }
+
+        .frio {
+            background-color: blue;
+        }
+
+        .cool {
+            background-color: green;
+        }
+
+        .calor {
+            background-color: red;
+        }
+
+        .weather-image {
+            width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>App de Clima</h1>
+        <label for="ciudadInput">Ingresa la ciudad:</label>
+        <input type="text" id="ciudadInput" placeholder="Ej. Ciudad, País">
+        <button id="obtenerClima">Obtener Clima</button>
+        <button id="obtenerManual">Obtener Manual</button>
+        <h2 id="ciudad">Ciudad: <span></span></h2>
+        <h2 id="temperatura">Temperatura: <span></span>°C</h2>
+        <div id="imagenContainer"></div>
+    </div>
+    <script src="./app.js"></script>
+</body>
+
+</html>
